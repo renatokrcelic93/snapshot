@@ -1,0 +1,1 @@
+## React, SSR, Redux architecture

@@ -1,0 +1,44 @@
+version: 0.2
+
+env:
+  variables:
+     API_URL: "https://obiwan.vomo.org/api/v1"
+     ADMIN_URL: "https://han.vomo.org"
+     NODE_ENV: "production"
+     PORT: 8080
+     ACCOUNTS_URL: "https://chewie.vomo.org"
+     ROOT_URL: "https://luke.vomo.org"
+     # key: "value"
+  #parameter-store:
+     # key: "value"
+     # key: "value"
+
+phases:
+  install:
+    commands:
+      - npm install
+      # - command
+      # - command
+  #pre_build:
+    #commands:
+      # - command
+      # - command
+  build:
+    commands:
+      - npm run build
+      # - command
+      # - command
+  #post_build:
+    #commands:
+      # - command
+      # - command
+artifacts:
+  files:
+    - '**/*'
+    # - location
+    # - location
+  #discard-paths: yes
+  #base-directory: location
+#cache:
+  #paths:
+    # - paths
